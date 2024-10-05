@@ -1,3 +1,31 @@
+# Ответы на вопросы
+### Перечислите список composer-пакетов, которые использует фреймворк Laravel после установки.
+```json
+{
+    "php": "^8.2",
+    "inertiajs/inertia-laravel": "^1.0",
+    "laravel/framework": "^11.9",
+    "laravel/sanctum": "^4.0",
+    "laravel/tinker": "^2.9",
+    "tightenco/ziggy": "^2.0"
+}
+```
+
+### Изучите директорию config и опишите какие файлы хранятся в этой директории.
+- app.php Основные настройки приложения. Большая часть из них берётся из .env
+- auth.php Параметры сервиса аунтификации.
+- cache.php Параметры кэша. Кэш в БД, кэш в файл.
+- database.php Подключение к БД.
+- filesystems.php Описание файловой системы. Я так понял, файлы могут лежать удалённо.
+- logging.php Логирование.
+- mail.php Как отправить e-mails.
+- queue.php Можно использовать api очереди.
+- services.php Настройки к внешним сервисам (креды и тп).
+- session.php Описывает, где будут хранится сессионные данные.
+
+### В какой директории хранятся основные файлы (классы) с бизнес-логикой приложения?
+- app
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
